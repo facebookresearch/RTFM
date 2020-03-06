@@ -1,11 +1,25 @@
 # RTFM
 
-This repository contains code for [RTFM: Generalizing to Novel Environment via Reading](https://arxiv.org/pdf/1910.08210.pdf).
+This repository contains code for [RTFM: Generalizing to Novel Environment via Reading](https://arxiv.org/abs/1910.08210).
 In particular, it contains
 
 - RTFM, a suite of procedurally generated environments that require jointly reasoning over a language goal, environment observations, and a document describing high-level environment dynamics.
 
 - txt2pi, a model that beats existing state-of-the-art models on RTFM.
+
+## Citation
+If you use this work, please cite:
+
+```bib
+@inproceedings{
+  Zhong2020RTFM,
+  title={RTFM: Generalising to New Environment Dynamics via Reading},
+  author={Victor Zhong and Tim Rockt\"{a}schel and Edward Grefenstette},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
+  url={https://openreview.net/forum?id=SJgob6NKvH}
+}
+```
 
 ## Setup
 
