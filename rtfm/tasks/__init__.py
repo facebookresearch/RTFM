@@ -86,7 +86,7 @@ register_env(
 
 register_env(
     id='groups_simple_stationary_single_monster_dev-v0',
-    entry_point='rtfm.tasks:GroupsSimpleStationarySingleDevMonster',
+    entry_point='rtfm.tasks:GroupsSimpleStationarySingleMonsterDev',
 )
 
 register_env(
@@ -96,7 +96,7 @@ register_env(
 
 register_env(
     id='groups_simple_stationary_single_item_dev-v0',
-    entry_point='rtfm.tasks:GroupsSimpleStationarySingleDevItem',
+    entry_point='rtfm.tasks:GroupsSimpleStationarySingleItemDev',
 )
 
 register_env(
