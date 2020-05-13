@@ -17,7 +17,7 @@ If you use this work, please cite:
   author={Victor Zhong and Tim Rockt\"{a}schel and Edward Grefenstette},
   booktitle={International Conference on Learning Representations},
   year={2020},
-  url={https://openreview.net/forum?id=SJgob6NKvH}
+  url={https://arxiv.org/abs/1910.08210}
 }
 ```
 
