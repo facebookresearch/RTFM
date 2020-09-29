@@ -40,8 +40,11 @@ if __name__ == '__main__':
                 ch = None
                 while ch not in Player.keymap:
                     print('Current score {} out of {}'.format(score, total))
-                    print('Enter your command.')
+                    print('Enter your command. x to quit.')
                     ch = getch.getch()
+                    if ch == 'x':
+                        import sys
+                        sys.exit(0)
                 feat, reward, finished, won = env.step(Player.keymap[ch])
             else:
                 feat, reward, finished, won = env.step(random.choice(Player.valid_moves))
