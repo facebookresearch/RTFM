@@ -104,7 +104,7 @@ class Model(nn.Module):
         # embed
         emb = self.emb(x.long())
         # rnn
-        packed = rnn_utils.pack_padded_sequence(emb, lengths=lens.long(), batch_first=True, enforce_sorted=False)
+        packed = rnn_utils.pack_padded_sequence(emb, lengths=lens.cpu().long(), batch_first=True, enforce_sorted=False)
         packed_h, _ = rnn(packed)
         h, _ = rnn_utils.pad_packed_sequence(packed_h, batch_first=True, padding_value=0.)
         return h
