@@ -22,7 +22,7 @@ class FILM(nn.Module):
     def forward(self, prev, pos):
         TB, dchannel, W, H = prev.size()
         prev = torch.cat([prev, pos], dim=1)
-        conv = self.conv(prev)
+        conv = self.conv(prev).relu()
         return conv
 
 
